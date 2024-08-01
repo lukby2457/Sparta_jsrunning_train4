@@ -26,6 +26,7 @@ console.log(obj1.getValue()) ; //  출력값 20
   obj2.method();
 
 /*
-  화살표 함수는 this를 바인딩하지 않는다. 그래서 웹 브라우저에서 출력하면 전역 객체인 Window가 나오게 된다.
-  따라서 this는 Window가 출력되게 된다.
+  화살표 함수는 this를 바인딩하지 않는다.
+  setTimeout 안에서 function으로 this가 호출되고 있고, 일반함수로 호출되면 호출주체가 없어
+  this는 전역객체를 가리키기 때문에 출력값으로 this는 Window를 출력하게 된다
 */

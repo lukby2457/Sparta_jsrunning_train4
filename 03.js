@@ -26,5 +26,6 @@ const obj2 = {
 obj2.method();
 
 /*
-  화살표 함수는 this를 바인딩하지 않으므로 this를 출력하게 되면 
+  화살표 함수는 this를 바인딩하지 않으나 setTimeout 함수 내에 function으로 일반 함수로 setTimeout의 인자로 사용하고 있다.
+  따라서, 화살표 함수의 this는 setTimeout을 출력하게 된다
 */
